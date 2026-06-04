@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: SpringBootRegLoginApp
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/thymeleaf_reglogindb
+    username: root
+    password: chand786
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
