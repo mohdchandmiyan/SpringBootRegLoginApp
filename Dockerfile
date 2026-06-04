@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN chmod +x gradlew
+RUN sed -i 's/\r$//' gradlew && chmod +x gradlew
 RUN ./gradlew clean bootJar -x test
 
 # Runtime stage
